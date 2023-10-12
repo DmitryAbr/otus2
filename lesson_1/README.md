@@ -22,7 +22,7 @@
 		Так как мы завершили транзакцию, при уровне изоляции **read commited** во второй сессии теперь мы можем увидеть изменения в таблице.
 -   завершите транзакцию во второй сессии
 -   начать новые но уже repeatable read транзации - set transaction isolation level repeatable read;
-![aa](/pic/isolation_repeateble_read.jpg)
+![aa](/lesson_1/pic/isolation_repeateble_read.jpg)
 -   в первой сессии добавить новую запись insert into persons(first_name, second_name) values('sveta', 'svetova');
 -   сделать select * from persons во второй сессии
 -   видите ли вы новую запись и если да то почему?
